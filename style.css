@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "font-google";
+  src: url(FONT/mukta-regular-webfont.woff);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  color: #6b728e;
+}
+
+body {
+  font: inherit/1.25em "font-google";
+  font-family: "font-google";
+  background: linear-gradient(to right, #474e68, #404258 15% 70%, #474e68);
+}
+
+/* NAVIAGATION BAR */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #50577a;
+  height: 80px;
+}
+
+/* 1. LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+  letter-spacing: 0.2em;
+  font-size: 25px;
+  height: inherit;
+  color: #404258;
+}
+
+/* 2. Naviagtion Link */
+.nav-group-link {
+  flex-grow: 3;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 4%;
+  margin-right: 10%;
+}
+
+.nav-group-link a {
+  text-decoration: none;
+  color: #404258;
+  font-size: 17px;
+}
+
+.nav-group-link li {
+  list-style: none;
+}
+
+/* 3. Login Button */
+.loginBtn {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 5%;
+  font-size: 1.5rem;
+}
+
+.loginBtn button {
+  background-color: #6b728e;
+  border-radius: 8px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5% 10%;
+  font-size: 80%;
+  font-family: "font google";
+  font-weight: 550;
+  color: #404258;
+  border: none;
+}
+
+/* Main */
+main {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "teks gambar";
+  height: 100vh;
+}
+
+/* Company Description */
+.companyDescription {
+  grid-area: teks;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Main Header */
+.companyDescription h2 {
+  font-size: 5rem;
+  line-height: 1em;
+  margin: 5vh auto 5vh;
+  color: #6b728e;
+}
+
+/* Main Caption */
+.mainCaption {
+  font-size: 1.25rem;
+  width: 70%;
+  margin: 0 auto 3vh;
+}
+
+/* Main Button */
+.homeButton {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  margin: 0 auto 3vh;
+}
+
+.trial-button {
+  width: 10vw;
+  height: 3vh;
+  background-color: #6b728e;
+  border-radius: 10px;
+  padding: 2vh 0.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #404258;
+}
+
+.view-demo-button {
+  background-color: inherit;
+  border: none;
+  width: 25vw;
+  text-align: left;
+  padding-left: 3%;
+  color: #6b728e;
+  font-size: 1.5rem;
+}
+
+/* Company Image */
+.companyImage {
+  grid-area: gambar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageHome {
+  width: 50%;
+  height: 50%;
+  background-color: #50577a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Begin to enter some sections */
+section {
+  height: 80vh;
+  border-top: 1vh solid #6b728e;
+}
+
+.start-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5rem;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-areas: "text image";
+  grid-template-columns: 1fr 1fr;
+}
+
+.image-banefits {
+  grid-area: image;
+  background-color: #50577a;
+  height: 70%;
+  width: 70%;
+  align-self: center;
+  justify-self: center;
+}
+
+.caption-banefits {
+  grid-area: text;
+  height: 70%;
+  width: 70%;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.section-2 {
+  display: grid;
+  grid-template-areas: "image text";
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-3 {
+  display: grid;
+  grid-template-areas: "text image";
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-4 {
+  display: grid;
+  grid-template-areas: "image text";
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-5 {
+  display: grid;
+  grid-template-areas: "text image";
+  grid-template-columns: 1fr 1fr;
+}
+
+.subscription-section {
+  text-align: center;
+  font-size: 2rem;
+}
+.cards {
+  display: flex;
+}
+
+.card-product-opsi {
+  width: 236px;
+  height: 405px;
+  border-radius: 22px;
+  background: #ffffff;
+}
+.card-product-opsi .card-detail {
+  width: 190px;
+  height: 242px;
+  /* margin: auto; */
+  background: #f3f3f3;
+  border-radius: 10px;
+}
+
+.card-product-opsi .btn-premium {
+  width: 160px;
+  height: 45px;
+
+  background: #54bd95;
+  border-radius: 10px;
+}
+.card-opsi {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 19px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  width: 264px;
+  height: 67px;
+  border-radius: 10px;
+}
+
+.card-monthly p {
+  /* padding-right: 20px; */
+  font-size: 20px;
+  font-weight: bold;
+  /* border: solid salmon 2px; */
+}
+
+.card-opsi .card-child {
+  width: 123px;
+  height: 51px;
+  background-color: green;
+  border-radius: 10px;
+  margin-left: 9px;
+  margin-top: -10px;
+  display: flex;
+}
+
+.card-child p {
+  margin: auto;
+  color: white;
+  /* border: solid 2px salmon; */
+}
+
+.card-product {
+  color: white;
+  margin: auto;
+  width: 260px;
+  height: 450px;
+  background-color: #54bd95;
+  border-radius: 10px;
+}
+.card-product h3 {
+  padding-top: 32px;
+}
+
+.card-product p {
+  padding-top: 10px;
+}
+
+.card-product h4 {
+  padding-top: 10px;
+}
+
+.card-detail {
+  color: black;
+  width: 242px;
+  height: 282px;
+  margin: auto;
+  border-radius: 10px;
+  background: #ffffff;
+  margin-top: 25px;
+}
+
+.detail-product {
+  text-align: left;
+  padding-left: 45px;
+  padding-top: 20px;
+}
+
+.detail-product p {
+  padding-top: 15px;
+}
+
+.btn-premium {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 204px;
+  height: 58px;
+  margin: auto;
+  background: #54bd95;
+  border-radius: 10px;
+  cursor: pointer;
+}
